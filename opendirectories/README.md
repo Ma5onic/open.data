@@ -24,6 +24,12 @@ This repository will be update on the first of every month, whereby all the
 associated data files will be updated with new data obtained from the previous 
 month. ID order is not guaranteed to be preserved.
 
+**Roadmap**
+
+* Inlcude JSON and CSV file formats
+
+* Include a http response field , i.e 200, 404 ect.
+
 
 **Access**
 ---------
