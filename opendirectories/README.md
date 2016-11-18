@@ -5,10 +5,13 @@ linked posts submitted to the subreddit https://www.reddit.com/r/opendirectories
 The URLs also include various other forms of associated data, including but not 
 limited to the post title, score and submit date.
 
-For those people only wishing to use the URLs and/or do not want to use sqlite, 
+For those people who only wish to use the URLs and/or do not want to use sqlite, 
 a text file has also been included as a substitute. This file only includes the 
-URLs and any other data would have to be retrieved from the database file and 
-therefore require the use of sqlite (see below).
+URLs which respond with a 200 status (OK), any other data reqired would have to 
+be retrieved from the database file and therefore require the use of sqlite 
+(see below). Other file formats will be added in future updates.
+
+**Visualisation**
 
 The graph below is derived from the data provided above. Each dot below
 represents a linked post submission at the subreddit. The x axis represents the 
@@ -28,7 +31,7 @@ month. ID order is not guaranteed to be preserved.
 
 * Inlcude JSON and CSV file formats
 
-* Include a http response field , i.e 200, 404 ect.
+* ~Include a http response field , i.e 200, 404 ect.~
 
 
 **Access**
