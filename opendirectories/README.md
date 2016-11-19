@@ -13,12 +13,20 @@ be retrieved from the database file and therefore require the use of sqlite
 
 **Visualisation**
 
-The graph below is derived from the data provided above. Each dot below
+The graph directly below is derived from the data provided above. Each dot below
 represents a linked post submission at the subreddit. The x axis represents the 
 date and time of the post and the y axis represents the total score of the post 
 (upvotes - downvotes).
 
 ![Submit Date (Timecode) VS Score](figs/TIME_GMT_vs_SCORE.png)
+
+This next graph represents a breakdown of all the server status response codes 
+received from the URLs. It can be seen that status code 200 (OK) and 'null' 
+dominate the results. 'null' here signifies that the server could not be 
+connected to at all. The 'others' field just includes other status codes which 
+comprised less than 1% of the results. The code to generate this graph can be 
+found [here](scripts/generate_graphs.ipynb)
+![Server Status Code Frequency](figs/STATUS_FREQUENCY.png)
 
 **Updates**
 ---------
@@ -29,9 +37,11 @@ month. ID order is not guaranteed to be preserved.
 
 **Roadmap**
 
-* Inlcude JSON and CSV file formats
+* Inlcude JSON format
 
-* ~Include a http response field , i.e 200, 404 ect.~
+* ~~Include CSV format~~
+
+* ~~Include a http response field , i.e 200, 404 ect~~
 
 
 **Access**
