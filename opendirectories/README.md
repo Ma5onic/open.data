@@ -25,7 +25,7 @@ received from the URLs. It can be seen that status code 200 (OK) and 'null'
 dominate the results. 'null' here signifies that the server could not be 
 connected to at all. The 'others' field just includes other status codes which 
 comprised less than 1% of the results. The code to generate this graph can be 
-found [here](scripts/generate_graphs.ipynb)
+found [here](scripts/generate_graphs.ipynb).
 ![Server Status Code Frequency](figs/STATUS_FREQUENCY.png)
 
 **Updates**
