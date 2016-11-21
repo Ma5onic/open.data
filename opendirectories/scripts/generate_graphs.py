@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 # coding: utf-8
 
 # **Generate Grapths - Opendirectories**
@@ -10,7 +10,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+import sys
+cwd = sys.path[0]
 # In[2]:
 
 plt.style.available
@@ -19,7 +20,7 @@ plt.style.use('bmh')
 
 # In[3]:
 
-df = pd.read_csv('../opendirectories.csv')
+df = pd.read_csv('{}/../opendirectories.csv'.format(cwd))
 
 
 # **1.0 Visualising Status code frequency**
@@ -52,5 +53,5 @@ ax = df_status.plot.pie(x=df_status.values,figsize=(9, 9),autopct='%0.1f%%', fon
 ax.set_ylabel('')
 fig=ax.get_figure()
 fig.tight_layout()
-fig.savefig('../figs/STATUS_FREQUENCY.png')
+fig.savefig('{}/../figs/STATUS_FREQUENCY.png'.format(cwd))
 
