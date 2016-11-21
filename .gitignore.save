@@ -1,6 +1,6 @@
-# Hidden generation folders (for security reasons)
+# Hidden generation folders (for  reasons)
 generate_hidden/
-run.py
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,43 +1,42 @@
 **Contents**
 ----------
-This data repository includes an sqlite database which contains all the URLs of 
-linked posts submitted to the subreddit https://www.reddit.com/r/opendirectories. 
-The URLs also include various other forms of associated data, including but not 
-limited to the post title, score and submit date.
+This data repository includes a sqlite database which contains all the URLs of 
+linked posts submitted to https://www.reddit.com/r/opendirectories. The URLs 
+also include various other forms of associated data, including but not 
+limited to the post title, score and submit date. A CSV file has now been 
+included which is a complete representation of the database.
 
-For those people who only wish to use the URLs and/or do not want to use sqlite, 
-a text file has also been included as a substitute. This file only includes the 
-URLs which respond with a 200 status (OK), any other data reqired would have to 
-be retrieved from the database file and therefore require the use of sqlite 
-(see below). Other file formats will be added in future updates.
+For those people who only wish to use the URLs and/or don't know how to use the 
+other file formats, a text file has also been included as a substitute. This 
+file only includes the URLs which respond with a 200 status (OK), any other 
+data required would have to be retrieved from either the database or CSV file.
 
 **Visualisation**
 
-The graph directly below is derived from the data provided above. Each dot below
-represents a linked post submission at the subreddit. The x axis represents the 
-date and time of the post and the y axis represents the total score of the post 
-(upvotes - downvotes).
+All the graphs present below are all generated from the dataset within this 
+repository. For the plot directly below each dot represents a linked post 
+submission. The x axis represents the date and time of the post (timecode) and 
+the y axis represents the total score of the post (upvotes - downvotes).
 
 ![Submit Date (Timecode) VS Score](figs/TIME_GMT_vs_SCORE.png)
 
 This next graph represents a breakdown of all the server status response codes 
 received from the URLs. It can be seen that status code 200 (OK) and 'null' 
 dominate the results. 'null' here signifies that the server could not be 
-connected to at all. The 'others' field just includes other status codes which 
-comprised less than 1% of the results. The code to generate this graph can be 
+connected to at all. The 'others' field is a combination of status codes which 
+comprised less than 1% of the total result. The code to generate this graph can be 
 found [here](scripts/generate_graphs.ipynb).
+
 ![Server Status Code Frequency](figs/STATUS_FREQUENCY.png)
 
 **Updates**
 ---------
 
-This repository will be update on the first of every month, whereby all the 
+This repository will be updated on the first of every month, whereby all the 
 associated data files will be updated with new data obtained from the previous 
 month. ID order is not guaranteed to be preserved.
 
 **Roadmap**
-
-* Inlcude JSON format
 
 * ~~Include CSV format~~
 
