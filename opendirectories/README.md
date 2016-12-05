@@ -3,8 +3,9 @@
 This data repository includes a sqlite database which contains all the URLs of 
 linked posts submitted to https://www.reddit.com/r/opendirectories. The URLs 
 also include various other forms of associated data, including but not 
-limited to the post title, score and submit date. A CSV file has now been 
-included which is a complete representation of the database.
+limited to the post title, score and submit date. Multiple CSV files have also 
+been included which represent each table im the database, they can be found 
+[here](subsets/).
 
 For those people who only wish to use the URLs and/or don't know how to use the 
 other file formats, a text file has also been included as a substitute. This 
@@ -13,21 +14,31 @@ data required would have to be retrieved from either the database or CSV file.
 
 **Visualisation**
 
-All the graphs present below are all generated from the dataset within this 
-repository. For the plot directly below each dot represents a linked post 
-submission. The x axis represents the date and time of the post (timecode) and 
-the y axis represents the total score of the post (upvotes - downvotes).
+All the graphs present below are generated from the dataset within this 
+repository. The code used to generate them can be found 
+[here](scripts/generate_graphs.ipynb), they are generated automatically each 
+month so if there are any visual artifacts please contact me via my email. 
+The plot below shows how the frequency of posts changes from month to month 
+on the subreddit. The x axis is broken down into months and the y axis 
+represents the total number of posts made during that period.
 
-![Submit Date (Timecode) VS Score](figs/TIME_GMT_vs_SCORE.png)
+![Submit Date (Timecode) VS Score](figs/POSTS_VS_TIME.png)
 
 This next graph represents a breakdown of all the server status response codes 
-received from the URLs. It can be seen that status code 200 (OK) and 'null' 
-dominate the results. 'null' here signifies that the server could not be 
+received from the URLs this month. It can be seen that status code 200 (OK) and 'null' 
+generally dominate the results. 'null' here signifies that the server could not be 
 connected to at all. The 'others' field is a combination of status codes which 
 comprised less than 1% of the total result. The code to generate this graph can be 
 found [here](scripts/generate_graphs.ipynb).
 
 ![Server Status Code Frequency](figs/STATUS_FREQUENCY.png)
+
+The next graph shows the historic percentage of server response codes
+recieved from the complete collection of URLs. Any status code which has never 
+contributed to more than 1% of all the URLs is not shown. The code to generate 
+this graph can be found [here](scripts/generate_graphs.ipynb).
+
+![Server Status Code Frequency](figs/DATE_STATUS_HISTORIC.png)
 
 **Updates**
 ---------
