@@ -6,8 +6,6 @@
 
 # In[1]:
 
-get_ipython().magic('matplotlib inline')
-
 
 # In[2]:
 
@@ -32,7 +30,7 @@ plt.style.use('bmh')
 
 # In[5]:
 
-df = pd.read_csv('{}../subsets/SUBREDDIT_LINKS.csv'.format(cwd))
+df = pd.read_csv('{}/../subsets/SUBREDDIT_LINKS.csv'.format(cwd))
 
 
 # **1.0 Visualising All Subreddit Posts**
@@ -62,7 +60,7 @@ ax.set_ylabel('Post Frequency')
 # Save figure
 fig=ax.get_figure()
 fig.tight_layout()
-fig.savefig('{}../figs/POSTS_VS_TIME.png'.format(cwd))
+fig.savefig('{}/../figs/POSTS_VS_TIME.png'.format(cwd))
 
 
 # **1.1 Visualising Status Code Frequency**
@@ -96,14 +94,14 @@ ax.set_ylabel('')
 ax.set_aspect('equal')
 fig=ax.get_figure()
 fig.tight_layout()
-fig.savefig('{}../figs/STATUS_FREQUENCY.png'.format(cwd))
+fig.savefig('{}/../figs/STATUS_FREQUENCY.png'.format(cwd))
 
 
 # **1.2 Visualising Connection Status Over Time**
 
 # In[11]:
 
-df = pd.read_csv('{}../subsets/CONNECTION_ANALYTICS.csv'.format(cwd), index_col=0)
+df = pd.read_csv('{}/../subsets/CONNECTION_ANALYTICS.csv'.format(cwd), index_col=0)
 
 
 # In[12]:
@@ -123,5 +121,5 @@ ax.set_xlabel('Date (d/m/y)')
 
 fig=ax.get_figure()
 fig.tight_layout()
-fig.savefig('{}../figs/DATE_STATUS_HISTORIC.png'.format(cwd))
+fig.savefig('{}/../figs/DATE_STATUS_HISTORIC.png'.format(cwd))
 
