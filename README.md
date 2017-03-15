@@ -9,7 +9,7 @@ A collection of datasets I have generated from which I think the public could be
 | Name | Description | Updated |
 | :--: |:-----------:| :------:|
 | [opendirectories](../opendirectories) | A database of open directories found on the net | 01/03/17 |
-| [ebook_metadata](../ebook_metadata) | A database of ebook metadata from around 5TB of books | TBA |
+| ebook_metadata | A database of metadata from around 5x10^9 ebooks | TBA |
 
 
 
