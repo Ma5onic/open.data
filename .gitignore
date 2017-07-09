@@ -1,6 +1,5 @@
-# Hidden generation folders (for security reasons)
-generate_hidden/
-run.py
+# Linux swap files
+*.swp
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
