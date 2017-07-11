@@ -24,7 +24,8 @@ represents the total number of posts made during that period.
 
 ![Submit Date (Timecode) VS Score](figs/POSTS_VS_TIME.png)
 
-This next graph represents a breakdown of all the server status response codes 
+
+The next graph represents a breakdown of all the server status response codes 
 received from the URLs this month. It can be seen that status code 200 (OK) and 'null' 
 generally dominate the results. 'null' here signifies that the server could not be 
 connected to at all. The 'others' field is a combination of status codes which 
@@ -33,12 +34,20 @@ found [here](scripts/generate_graphs.ipynb).
 
 ![Server Status Code Frequency](figs/STATUS_FREQUENCY.png)
 
+
+This next graph breaks down the most common url paths used by open directories. 
+It does not include empty paths '/' and captilisations are retained. The code to
+generate this graph can be found [here](scripts/generate_graphs.ipynb).
+
+![Most Common URL Paths](figs/COMMON_PATHS.png)
+
+
 The next graph shows the historic percentage of server response codes
 recieved from the complete collection of URLs. Any status code which has never 
 contributed to more than 1% of all the URLs is not shown. The code to generate 
 this graph can be found [here](scripts/generate_graphs.ipynb).
 
-![Server Status Code Frequency](figs/DATE_STATUS_HISTORIC.png)
+![Server Status Code Historic Frequency](figs/DATE_STATUS_HISTORIC.png)
 
 **Updates**
 ---------
